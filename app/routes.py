@@ -8,14 +8,15 @@ from app.models import User
 
 @app.route('/')
 @app.route('/index')
+@login_required
 def index():
     posts = [
         {
-            'author': {'username': 'John'},
+            'author': {'username': 'Eko'},
             'body': 'Beautiful day in Portland!'
         },
         {
-            'author': {'username': 'Susan'},
+            'author': {'username': 'Susanto'},
             'body': 'The Avengers movie was so cool!'
         }
     ]
